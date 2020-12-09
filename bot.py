@@ -7,8 +7,8 @@ load_dotenv()
 
 bot = commands.Bot(command_prefix=["."],case_insensitive=True,help_command=None)
 
-rasa_bot_id = "Nzc1NzI2ODEwNjExOTc0MTU0.X6qh4w.DjsKmnj-220AbkmWnq-cOVdeM-0"
-channel_id = 714114451065798737
+rasa_bot_id = "Bot Token"
+channel_id = #channel_id
 
 client = dicord.Client()
 
