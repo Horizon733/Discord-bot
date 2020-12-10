@@ -1,5 +1,5 @@
 import discord
-from dicord.ext import commands
+from discord.ext import commands
 from dotenv import load_dotenv
 from chitchat import Chitchat
 
@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix=["."],case_insensitive=True,help_command=None)
 rasa_bot_id = "Bot Token"
 channel_id = #channel_id
 
-client = dicord.Client()
+client = discord.Client()
 
 @client.event
 async def on_ready():
