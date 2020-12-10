@@ -1,7 +1,6 @@
-from discord.ext import commands
 import discord
-
-url = "ngrok_ip/webhooks/rest/webhook"
+from discord.ext import commands
+import requests
 
 
 
@@ -11,6 +10,7 @@ class Chitchat(commands.Cog):
     
     @commands.command(name="hi")
     async def greet(self, ctx):
+        url = "ngrok_ip/webhooks/rest/webhook"
         mes = {"message":"/greet","sender":"me"}
         x = requests.post(url,json=mes)
         msg = x.json()[0]['text']
@@ -18,6 +18,7 @@ class Chitchat(commands.Cog):
     
     @commands.commands(name="rank")
     async def rank(self,ctx):
+        url = "ngrok_ip/webhooks/rest/webhook"
         mes = {"message":"/rank","sender":"me"}
         x = requests.post(url,json=mes)
         msg = x.json()[0]['text']
