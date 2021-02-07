@@ -7,8 +7,8 @@ load_dotenv()
 
 bot = commands.Bot(command_prefix=["."],case_insensitive=True,help_command=None)
 
-rasa_bot_id = "Bot Token"
-channel_id = #channel_id
+rasa_bot_id = "NzgzNzQ4MTczNjg0MDE1MTU1.X8fQXQ.bK4O8bO2Ij8OjtwXHOeGRQcezZE"
+channel_id = 714114451065798737
 
 client = discord.Client()
 
@@ -23,6 +23,9 @@ async def on_command_error(ctx,error):
 async def on_ready():
     await bot.change_presence(status=discord.Status.online,activity=discord.Activity(name="Looking you",type=3))
     print(f'{bot.user.name} is running...')
+
+
+
 
 bot.add_cog(Chitchat(bot))
 bot.run(rasa_bot_id)
