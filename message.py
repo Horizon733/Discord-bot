@@ -14,4 +14,4 @@ class Message(discord.Client):
             await message.reply(discordConnector.send_message(message.content))
 
 client = Message()
-client.run('NzgzNzQ4MTczNjg0MDE1MTU1.X8fQXQ.bK4O8bO2Ij8OjtwXHOeGRQcezZE')
+client.run('TOKEN')
