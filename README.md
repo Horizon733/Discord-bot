@@ -18,6 +18,10 @@ pip install rasa==2.0.2
 bot_id = "hlkhuy1lhl1.ohyiyiyy111.uu79"
 channel_id = 1234567890
 ```
+### In chitchat.py
+```python
+url = 'https://yoururl.ngrok.io/webhooks/url/webhook'
+```
 
 ### In chitchat.py
 ```python
@@ -33,4 +37,4 @@ Please make sure not to add models too.
 - Making discord bot more conversation type
 - Adding more Functionalities for Rasa to work with Discord
 - More humanly conversation
-- Have an idea just ping -we will work on it!-
+- Have an idea just ping -we will work on it!
